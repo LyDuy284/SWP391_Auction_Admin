@@ -49,7 +49,7 @@ class _DrawerPageState extends State<DrawerPage> {
                 title: Text(
                   "Admin Menu",
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 trailing: !ResponsiveLayout.isComputer(context)
@@ -57,7 +57,7 @@ class _DrawerPageState extends State<DrawerPage> {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        icon: Icon(Icons.close, color: Colors.black),
+                        icon: Icon(Icons.close, color: Colors.white),
                       )
                     : null,
               ),
@@ -81,14 +81,14 @@ class _DrawerPageState extends State<DrawerPage> {
                         title: Text(
                           _buttonNames[index].title,
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
                         leading: Padding(
                           padding: const EdgeInsets.all(Constants.kPadding),
                           child: Icon(
                             _buttonNames[index].icon,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
                         onTap: () {
