@@ -1,15 +1,16 @@
-import 'dart:js';
+//import 'dart:js';
 
 import 'package:go_router/go_router.dart';
 import 'package:swp391_auction_admin/screen/login_screen.dart';
+import 'package:swp391_auction_admin/screen/signup/sign_up_screen.dart';
+import 'package:swp391_auction_admin/screen/user_profie_screen.dart';
 import 'package:swp391_auction_admin/widget_tree.dart';
-
-
 
 class RouteName {
   static const String home = '/home';
   static const String login = '/login';
-  static const String signup = '/signup';
+  static const String users = '/users';
+  static const String signup = '/users';
 
   static const publicRoutes = [
     home,
@@ -32,7 +33,19 @@ final router = GoRouter(
     ),
     GoRoute(
       path: RouteName.login,
-      builder: (context, state) => LoginPage(),
+      builder: (context, state) => LoginScreen(),
     ),
+    GoRoute(
+      path: RouteName.users,
+      builder: (context, state) => UserListProfile(),
+    ),
+    GoRoute(
+      path: RouteName.signup,
+     builder: (context, state) => const SignUpScreen(),
+    ),
+    //GoRoute(
+    //  path: RouteName.profile,
+    //  builder: (context, state) => const ProfileScreen(),
+    //),
   ],
 );

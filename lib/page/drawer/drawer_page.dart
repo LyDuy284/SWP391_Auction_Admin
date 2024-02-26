@@ -21,13 +21,13 @@ int _currentIndex = 0;
 
 List<ButtonsInfo> _buttonNames = [
   ButtonsInfo(title: "Home", icon: Icons.home),
+  ButtonsInfo(title: "Staff", icon: Icons.verified_user),
+  ButtonsInfo(title: "Users", icon: Icons.supervised_user_circle_rounded),
+  ButtonsInfo(title: "Post", icon: Icons.post_add),
+  ButtonsInfo(title: "Sales", icon: Icons.sell),
   ButtonsInfo(title: "Setting", icon: Icons.settings),
   ButtonsInfo(title: "Notifications", icon: Icons.notifications),
   ButtonsInfo(title: "Contacts", icon: Icons.contact_phone_rounded),
-  ButtonsInfo(title: "Sales", icon: Icons.sell),
-  ButtonsInfo(title: "Marketing", icon: Icons.mark_email_read),
-  ButtonsInfo(title: "Security", icon: Icons.verified_user),
-  ButtonsInfo(title: "Users", icon: Icons.supervised_user_circle_rounded),
 ];
 
 class DrawerPage extends StatefulWidget {

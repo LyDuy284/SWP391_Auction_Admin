@@ -11,3 +11,4 @@ class _PanelRightPage extends State<PanelRightPage> {
     return Container();
   }
 }
+
